@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.linear_model import LogisticRegression
+# from sklearn.linear_model import LogisticRegression
 
 # ----------------------------
 # Load Model (train first and save)
@@ -59,3 +59,4 @@ if st.button("Predict Survival"):
         st.success(f"✅ This passenger would have SURVIVED with probability {prob:.2f}")
     else:
         st.error(f"❌ This passenger would NOT have survived (Survival Probability {prob:.2f})")
+
